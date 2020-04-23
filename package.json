@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SmartMoveSystems/ionicLogFileAppender.git"
+    "url": "git+https://github.com/jaganreddy314/ionic-log-file-appender2.git"
   },
   "license": "MIT",
   "dependencies": {
