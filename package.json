@@ -1,0 +1,68 @@
+{
+  "name": "ionic-log-file-appender2",
+  "author": "CellTrack Systems Pty Ltd",
+  "homepage": "http://smartmovetaxis.com",
+  "version": "2.0.7",
+  "description": "A simple rolling log file appender for Ionic Cordova",
+  "main": "./dist/log.js",
+  "typings": "./dist/log.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "ng build log",
+    "metadata": "cp ./projects/log/src/ionic-log-file-appender.metadata.json ./dist && cp ./README.md ./dist",
+    "test": "karma start ./projects/log/test-config/karma.conf.js",
+    "test-ci": "karma start ./projects/log/test-config/karma.conf.js --single-run",
+    "test-coverage": "karma start ./projects/log/test-config/karma.conf.js --coverage",
+    "publish-package": "npm run build && npm run metadata && cd dist && npm publish",
+    "local-pack": "npm run build && npm run metadata && cd dist && npm pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SmartMoveSystems/ionicLogFileAppender.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "5.2.11",
+    "@angular/compiler": "5.2.11",
+    "@angular/compiler-cli": "5.2.11",
+    "@angular/core": "5.2.11",
+    "@angular/forms": "5.2.11",
+    "@angular/platform-browser": "5.2.11",
+    "@angular/platform-browser-dynamic": "5.2.11",
+    "@ionic-native/core": "4.7.0",
+    "@ionic-native/file": "^4.10.0",
+    "ionic-angular": "3.9.2",
+    "rxjs": "5.5.2",
+    "sw-toolbox": "3.6.0",
+    "zone.js": "0.8.18"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.13.0",
+    "@angular-devkit/build-ng-packagr": "~0.13.0",
+    "@angular/cli": "^7.0.4",
+    "@ionic/app-scripts": "^3.2.2",
+    "@types/jasmine": "^2.5.41",
+    "@types/node": "^8.0.45",
+    "angular2-template-loader": "^0.6.2",
+    "html-loader": "^0.5.1",
+    "ionic-mocks": "^1.3.0",
+    "istanbul-instrumenter-loader": "^3.0.0",
+    "jasmine": "^2.5.3",
+    "jasmine-spec-reporter": "^4.1.0",
+    "karma": "^4.0.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-coverage-istanbul-reporter": "^1.3.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^3.0.5",
+    "ng-packagr": "^5.0.1",
+    "null-loader": "^0.1.1",
+    "protractor": "^5.4.1",
+    "ts-loader": "^3.0.3",
+    "ts-node": "^3.0.2",
+    "typescript": "^2.4.2"
+  }
+}
